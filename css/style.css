@@ -502,7 +502,26 @@ em {
   font-weight: 700;
   letter-spacing: 2px;
 }
+/* Detalles de los planes */
+.plan-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 42px;
+}
 
+.plan-icon {
+  color: #c99496;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.plan-number {
+  color: #c99496;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
 .plan-mini h3 {
   margin-top: 35px;
 }
