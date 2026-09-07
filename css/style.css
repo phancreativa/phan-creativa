@@ -625,7 +625,7 @@ em {
 }
 
 .footer .socials a {
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -635,7 +635,7 @@ em {
   justify-self: end;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .reveal {
