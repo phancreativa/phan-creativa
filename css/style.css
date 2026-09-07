@@ -553,6 +553,13 @@ em {
 .cta .button {
   margin-top: 28px;
   background: #3bc4cc;
+   transition: all .3s ease;
+}
+
+.cta .button:hover {
+  background: #2fb4bd;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 196, 204, .25);
 }
 
 .cta-decoration {
