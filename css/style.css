@@ -863,7 +863,7 @@ em {
 
 .footer-legal a,
 .footer-legal span {
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: .5px;
   color: var(--muted);
 }
@@ -880,7 +880,7 @@ em {
   justify-self: end;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 @media (max-width: 680px) {
