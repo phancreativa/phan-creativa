@@ -506,24 +506,24 @@ em {
 .plan-top {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   margin-bottom: 42px;
 }
 
 .plan-icon {
   color: #c99496;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
 }
 
 .plan-number {
   color: #c99496;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.18em;
 }
 .plan-mini h3 {
-  margin-top: 35px;
+  margin-top: 0;
 }
 
 .plan-mini p {
