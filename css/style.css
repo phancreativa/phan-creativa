@@ -524,29 +524,24 @@ em {
   transform: translateY(-6px) rotate(-1deg);
 }
 
-.plan-mini span {
-  color: var(--rose);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
+
 /* Detalles de los planes */
 .plan-top {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 42px;
 }
 
 .plan-icon {
   color: #c99496;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
 }
 
 .plan-number {
   color: #c99496;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
 }
