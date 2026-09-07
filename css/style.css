@@ -488,6 +488,10 @@ em {
   font-size: 14px;
 }
 
+.work-content .button {
+  margin-top: 32px;
+}
+
 .hand-note {
   position: absolute;
   right: 5%;
