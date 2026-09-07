@@ -405,6 +405,10 @@ em {
   transition: transform .25s ease, background .25s ease;
 }
 
+.card-link {
+  margin-top: 25px;
+}
+
 .service-card:hover {
   transform: translateY(-5px);
   background: var(--warm-white);
@@ -553,22 +557,22 @@ em {
 .cta .button {
   margin-top: 28px;
   background: #3bc4cc;
-   transition: all .3s ease;
+  transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
 }
 
 .cta .button:hover {
   background: #2fb4bd;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(59, 196, 204, .25);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(59, 196, 204, .28);
 }
 
 .cta .button span {
   display: inline-block;
-  transition: transform .3s ease;
+  transition: transform .35s ease;
 }
 
 .cta .button:hover span {
-  transform: translateX(5px);
+  transform: translateX(7px);
 }
 .cta-decoration {
   position: absolute;
