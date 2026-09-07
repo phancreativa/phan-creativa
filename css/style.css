@@ -460,7 +460,8 @@ em {
 }
 
 .card-link {
-  margin-top: 25px;
+  margin-top: auto;
+  padding-top: 25px;
 }
 
 .work-preview {
