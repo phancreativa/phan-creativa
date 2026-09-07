@@ -562,6 +562,14 @@ em {
   box-shadow: 0 8px 20px rgba(59, 196, 204, .25);
 }
 
+.cta .button span {
+  display: inline-block;
+  transition: transform .3s ease;
+}
+
+.cta .button:hover span {
+  transform: translateX(5px);
+}
 .cta-decoration {
   position: absolute;
   right: 12%;
