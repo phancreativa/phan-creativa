@@ -32,3 +32,15 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach(element => observer.observe(element));
+// Mostrar botón "volver al inicio" al deslizar
+const backToTop = document.querySelector(".back-to-top");
+
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+}
