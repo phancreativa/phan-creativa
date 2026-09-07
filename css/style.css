@@ -529,19 +529,19 @@ em {
 .plan-top {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 42px;
 }
 
 .plan-icon {
   color: #c99496;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1;
 }
 
 .plan-number {
   color: #c99496;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.18em;
 }
