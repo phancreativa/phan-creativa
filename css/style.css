@@ -141,8 +141,24 @@ img {
 .button-small {
   min-height: 42px;
   padding: 10px 20px;
-  background: var(--rose);
-  color: white;
+  background: #3bc4cc;
+  color: var(--teal-deep);
+  transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+
+.button-small:hover {
+  background: #2fb4bd;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 196, 204, .25);
+}
+
+.button-small span {
+  display: inline-block;
+  transition: transform .3s ease;
+}
+
+.button-small:hover span {
+  transform: translateX(5px);
 }
 
 .button-primary {
