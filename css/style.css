@@ -402,11 +402,14 @@ em {
   min-height: 310px;
   padding: 35px 27px;
   background: var(--cream);
+  display: flex;
+  flex-direction: column;
   transition: transform .25s ease, background .25s ease;
 }
 
 .card-link {
-  margin-top: 25px;
+  margin-top: auto;
+  padding-top: 25px;
 }
 
 .service-card:hover {
