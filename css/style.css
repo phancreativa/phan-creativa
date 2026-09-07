@@ -847,3 +847,52 @@ em {
 .whatsapp-float:hover {
   transform: scale(1.08);
 }
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.footer-legal a,
+.footer-legal span {
+  font-size: 10px;
+  letter-spacing: .5px;
+  color: var(--muted);
+}
+
+.footer-legal a {
+  transition: color .25s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--teal);
+}
+
+.footer-copy {
+  justify-self: end;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12px;
+}
+
+@media (max-width: 680px) {
+  .footer-center {
+    gap: 18px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+  }
+
+  .footer-copy {
+    justify-self: center;
+  }
+}
