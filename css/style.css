@@ -742,13 +742,25 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--teal);
-  color: var(--cream);
+  background: #6ed6df;
+  color: var(--teal-deep);
   font-size: 24px;
+  font-weight: 600;
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
   z-index: 9998;
-  transition: transform 0.25s ease;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.25s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .back-to-top:hover {
