@@ -382,8 +382,7 @@ em {
   font-size: 14px;
 }
 
-.text-link,
-.card-link {
+.text-link {
   display: inline-flex;
   align-items: center;
   gap: 14px;
@@ -396,8 +395,7 @@ em {
   text-transform: uppercase;
 }
 
-.text-link span,
-.card-link span {
+.text-link span {
   font-size: 18px;
   line-height: 0;
 }
@@ -442,11 +440,6 @@ em {
   transition: transform .25s ease, background .25s ease;
 }
 
-.card-link {
-  margin-top: auto;
-  padding-top: 25px;
-}
-
 .service-card:hover {
   transform: translateY(-5px);
   background: var(--warm-white);
@@ -476,11 +469,6 @@ em {
   margin-top: 13px;
   color: var(--muted);
   font-size: 13px;
-}
-
-.card-link {
-  margin-top: auto;
-  padding-top: 25px;
 }
 
 .work-preview {
