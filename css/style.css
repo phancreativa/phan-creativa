@@ -67,6 +67,23 @@ img {
   flex-shrink: 0;
 }
 
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header img {
+  display: block;
+  width: auto;
+  height: 48px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.logo-header:hover {
+  opacity: .85;
+}
+
 .brand-main {
   font-family: var(--serif);
   font-size: 34px;
@@ -976,6 +993,53 @@ em {
 
   .legal-content p {
     font-size: 13px;
+  }
+
+}
+
+/* ================= LOGOS PHAN + TRADEM ================= */
+
+.brand-collab {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: start;
+}
+
+.collab-logo {
+  display: flex;
+  align-items: center;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.collab-logo img {
+  display: block;
+  width: auto;
+  height: 34px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.collab-logo:hover {
+  opacity: .78;
+  transform: translateY(-2px);
+}
+
+.collab-x {
+  color: var(--rose);
+  font-family: var(--serif);
+  font-size: 16px;
+}
+
+@media (max-width: 680px) {
+
+  .brand-collab {
+    justify-self: center;
+  }
+
+  .collab-logo img {
+    height: 30px;
+    max-width: 105px;
   }
 
 }
