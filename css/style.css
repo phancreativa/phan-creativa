@@ -713,7 +713,12 @@ em {
     min-height: 68px;
     padding: 10px 20px;
   }
-
+  
+  .logo-header img {
+    width: 105px;
+    height: auto;
+  }
+  
   .brand-main {
     font-size: 29px;
   }
