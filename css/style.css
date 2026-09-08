@@ -567,7 +567,7 @@ em {
 }
 
 .cta > p:not(.eyebrow) {
-  max-width: 550px;
+  max-width: 620px;
   margin: 22px auto 0;
   color: rgba(247,245,238,.75);
   font-size: 14px;
