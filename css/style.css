@@ -60,6 +60,8 @@ img {
   border-bottom: 1px solid rgba(31, 41, 43, 0.08);
 }
 
+
+
 .brand {
   display: inline-flex;
   flex-direction: column;
@@ -70,18 +72,18 @@ img {
 .logo-header {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-header img {
   display: block;
-  width: auto;
-  height: 48px;
-  max-width: 150px;
+  width: 125px;
+  height: auto;
   object-fit: contain;
 }
 
 .logo-header:hover {
-  opacity: .85;
+  opacity: .9;
 }
 
 .brand-main {
