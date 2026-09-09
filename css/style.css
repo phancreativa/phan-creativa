@@ -1253,3 +1253,23 @@ em {
   .service-intro, .service-list li { font-size:13px; }
   .service-partner-note { padding:15px; }
 }
+.print-note {
+  margin-top: 25px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+  display: block;
+}
+
+.print-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.print-note .partner-note-icon {
+  display: none;
+}
