@@ -1273,3 +1273,23 @@ em {
 .print-note .partner-note-icon {
   display: none;
 }
+.service-partner-button {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .25s ease, background .25s ease;
+}
+
+.service-partner-button:hover {
+  background: rgba(53,202,202,.18);
+  transform: translateY(-2px);
+}
+
+.service-partner-button p {
+  color: var(--muted);
+}
+
+.service-partner-button strong {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
