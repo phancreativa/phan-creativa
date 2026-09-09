@@ -231,8 +231,8 @@ img {
 
 .hero {
   position: relative;
-  min-height: min(720px, calc(100vh - 78px));
-  padding: clamp(70px, 9vw, 120px) max(24px, 7vw);
+  min-height: min(650px, calc(100vh - 78px));
+  padding: clamp(45px, 6vw, 75px) max(24px, 7vw);
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
