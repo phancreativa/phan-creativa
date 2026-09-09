@@ -37,3 +37,95 @@
 .plan-includes{grid-column:2;padding:25px 0 0;border-left:0;border-top:1px solid var(--line)}.plan-action{grid-column:2;padding-top:23px;margin-top:0}.plan-tagline{font-size:16px}.plan-button{min-width:0;width:100%;max-width:290px}
 .plans-consultation{margin:38px 22px 55px;padding:32px 25px;grid-template-columns:1fr;gap:28px}.consultation-note{padding:25px 0 0;border-left:0;border-top:1px solid rgba(0,79,90,.2)}
 }
+/* ================= CTA FINAL ================= */
+
+.plans-cta {
+  position: relative;
+  padding: clamp(90px, 10vw, 125px) 24px;
+  text-align: center;
+  overflow: hidden;
+  background: var(--teal-deep);
+  color: var(--cream);
+}
+
+.plans-cta .eyebrow {
+  color: var(--cream);
+}
+
+.plans-cta h2 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(50px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.5px;
+}
+
+.plans-cta h2 em {
+  font-style: italic;
+}
+
+.plans-cta > p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 23px auto 0;
+  color: rgba(247, 245, 238, .75);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.plans-cta .button {
+  margin-top: 28px;
+  background: #3bc4cc;
+  color: var(--teal-deep);
+  transition:
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.plans-cta .button:hover {
+  background: #2fb4bd;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(59, 196, 204, .28);
+}
+
+.plans-cta .button span {
+  display: inline-block;
+  transition: transform .35s ease;
+}
+
+.plans-cta .button:hover span {
+  transform: translateX(7px);
+}
+
+.cta-flower {
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(53, 202, 202, .45);
+  font-size: 58px;
+  line-height: 1;
+}
+
+@media (max-width: 680px) {
+
+  .plans-cta {
+    padding: 80px 22px 90px;
+  }
+
+  .plans-cta h2 {
+    font-size: clamp(45px, 13vw, 62px);
+  }
+
+  .plans-cta > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+
+  .cta-flower {
+    right: 8%;
+    top: 18%;
+    font-size: 40px;
+  }
+
+}
