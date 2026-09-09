@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hablemos de tu proyecto y encontremos juntas la mejor manera de darle vida.">
+  <title>Contacto | Phan Creativa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body id="top">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <a href="index.html" class="brand logo-header" aria-label="Phan Creativa, inicio">
+      <img src="images/phan-creativa-web.svg" alt="Phan Creativa">
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="planes.html">Planes</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+
+    <a href="contacto.html" class="button button-small">
+      Trabajemos juntos <span>→</span>
+    </a>
+
+  </header>
+
+
+  <!-- ================= CONTACTO ================= -->
+  <main>
+
+    <section class="contact-hero">
+
+      <div class="contact-intro">
+
+        <p class="eyebrow">HABLEMOS</p>
+
+        <h1>
+          Hagamos<br>
+          <em>realidad</em><br>
+          tu próxima idea.
+        </h1>
+
+        <p class="contact-lead">
+          Cuéntame qué tienes en mente.<br>
+          Me encantará conocer tu proyecto y encontrar juntas la mejor manera de darle vida.
+        </p>
+
+        <div class="contact-handwritten">
+          <span>✦</span>
+          <p>Las buenas ideas<br>merecen encontrar<br><em>su forma.</em> ♡</p>
+        </div>
+
+      </div>
+
+
+      <!-- ================= FORMULARIO ================= -->
+      <div class="contact-form-card">
+
+        <div class="form-topline">
+          <span>CUÉNTAME SOBRE TU PROYECTO</span>
+          <i></i>
+        </div>
+
+        <form id="contactForm">
+
+          <!-- 01 -->
+          <fieldset>
+            <div class="form-section-heading">
+              <span class="form-number">01</span>
+              <h2>Cuéntame de ti</h2>
+            </div>
+
+            <div class="field full">
+              <label for="nombre">Nombre <span>*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+
+              <div class="field">
+                <label for="whatsapp">WhatsApp <span>*</span></label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="55 0000 0000" required>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <!-- 02 -->
+          <fieldset>
+            <div class="form-section-heading">
+              <span class="form-number">02</span>
+              <h2>¿Qué necesitas?</h2>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="servicio">Servicio de interés <span>*</span></label>
+                <select id="servicio" name="servicio" required>
+                  <option value="" selected disabled>Selecciona una opción</option>
+                  <option value="Identidad visual">Identidad visual</option>
+                  <option value="Diseño para redes">Diseño para redes</option>
+                  <option value="Diseño gráfico / editorial">Diseño gráfico / editorial</option>
+                  <option value="Diseño web">Diseño web</option>
+                  <option value="Plan de identidad">Plan de identidad</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="plan">Si ya tienes un plan en mente</label>
+                <select id="plan" name="plan">
+                  <option value="" selected>Selecciona un plan</option>
+                  <option value="Origen">Origen</option>
+                  <option value="Semilla">Semilla</option>
+                  <option value="Brote">Brote</option>
+                  <option value="Florece">Florece</option>
+                  <option value="Esencia">Esencia</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <!-- 03 -->
+          <fieldset>
+            <div class="form-section-heading">
+              <span class="form-number">03</span>
+              <h2>Hablemos de tu proyecto</h2>
+            </div>
+
+            <div class="field full">
+              <label for="proyecto">Cuéntame un poquito sobre tu idea <span>*</span></label>
+              <textarea id="proyecto" name="proyecto" rows="5" placeholder="Platícame sobre tu proyecto, objetivos, ideas o cualquier detalle que consideres importante..." required></textarea>
+            </div>
+
+            <div class="stage-question">
+              <p>¿En qué etapa está tu proyecto? <span>*</span></p>
+
+              <div class="stage-options">
+                <label>
+                  <input type="radio" name="etapa" value="Apenas estoy comenzando" required>
+                  <span>Apenas estoy comenzando</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="etapa" value="Estoy buscando crecer">
+                  <span>Estoy buscando crecer</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="etapa" value="Ya tengo una marca">
+                  <span>Ya tengo una marca</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="etapa" value="Solo tengo una idea por ahora">
+                  <span>Solo tengo una idea por ahora</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="etapa" value="Quiero renovarla">
+                  <span>Quiero renovarla</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="etapa" value="Otro">
+                  <span>Otro</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <button type="submit" class="contact-submit">
+            Hagámoslo realidad <span>→</span>
+          </button>
+
+          <p class="form-note">
+            Al enviar este formulario, utilizaré tus datos únicamente para ponerme en contacto contigo sobre tu proyecto.
+          </p>
+
+        </form>
+
+
+        <!-- WhatsApp -->
+        <div class="whatsapp-contact-box">
+
+          <div class="whatsapp-contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div>
+            <h3>¿Prefieres hablar directamente?</h3>
+            <p>Si tienes una pregunta rápida, también puedes escribirme por WhatsApp.</p>
+          </div>
+
+          <a
+            href="https://wa.me/527472268287"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-contact-link"
+          >
+            Hablar por WhatsApp <span>→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="contact-cta section-dark">
+
+      <p class="eyebrow">¿TIENES UNA IDEA?</p>
+
+      <h2>Hagámoslo <em>realidad.</em></h2>
+
+      <p>
+        Cuéntame sobre tu proyecto y encontremos juntos<br>
+        la mejor manera de darle vida.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="brand-collab">
+
+      <a href="index.html" class="collab-logo" aria-label="Phan Creativa">
+        <img src="images/phan-creativa-web.svg" alt="Phan Creativa">
+      </a>
+
+      <span class="collab-x">×</span>
+
+      <a
+        href="https://www.trademdigital.com/"
+        class="collab-logo"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Tradem Digital"
+      >
+        <img src="images/tradem-digital-web.svg" alt="Tradem Digital">
+      </a>
+
+    </div>
+
+    <div class="footer-center">
+
+      <div class="socials">
+        <a href="https://www.behance.net/PhanCreativo" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a href="https://wa.me/527472268287" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:phancreativa@gmail.com">Correo</a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="aviso-privacidad.html">Aviso de privacidad</a>
+        <span>·</span>
+        <a href="terminos-condiciones.html">Términos y condiciones</a>
+      </div>
+
+    </div>
+
+    <p class="footer-copy">Diseño que deja huella. ♡</p>
+
+  </footer>
+
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <a
+    href="https://wa.me/527472268287"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+    ↑
+  </a>
+
+  <script src="js/script.js"></script>
+  <script src="js/contacto.js"></script>
+
+</body>
+</html>
