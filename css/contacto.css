@@ -1,0 +1,468 @@
+/* =========================================================
+   CONTACTO — Phan Creativa
+   ========================================================= */
+
+.contact-hero {
+  max-width: 1180px;
+  margin: auto;
+  padding: clamp(70px, 8vw, 105px) max(24px, 5vw) 95px;
+  display: grid;
+  grid-template-columns: minmax(300px, .72fr) minmax(500px, 1.28fr);
+  gap: clamp(55px, 8vw, 110px);
+  align-items: start;
+  background: var(--warm-white);
+}
+
+.contact-intro {
+  position: sticky;
+  top: 120px;
+  padding-top: 55px;
+}
+
+.contact-intro h1 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(55px, 6.2vw, 82px);
+  font-weight: 400;
+  line-height: .97;
+  letter-spacing: -2px;
+  color: var(--teal-deep);
+}
+
+.contact-intro h1 em {
+  font-style: italic;
+}
+
+.contact-lead {
+  max-width: 410px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.contact-handwritten {
+  margin-top: 95px;
+  margin-left: 45px;
+  width: 180px;
+  text-align: center;
+  transform: rotate(-5deg);
+}
+
+.contact-handwritten span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--mint);
+  font-size: 27px;
+}
+
+.contact-handwritten p {
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.28;
+  color: var(--teal);
+}
+
+.contact-handwritten em {
+  font-style: italic;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.contact-form-card {
+  padding: 38px 38px 34px;
+  background: #f7f1ee;
+  border-radius: 22px;
+  border: 1px solid rgba(31, 41, 43, .05);
+}
+
+.form-topline {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 38px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .25em;
+}
+
+.form-topline i {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.contact-form-card fieldset {
+  margin: 0 0 39px;
+  padding: 0;
+  border: 0;
+}
+
+.form-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.form-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  background: rgba(53, 202, 202, .13);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-section-heading h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--teal-deep);
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.field label,
+.stage-question > p {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--teal-deep);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.field label span,
+.stage-question > p span {
+  color: var(--rose);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(31, 41, 43, .18);
+  border-radius: 6px;
+  padding: 13px 14px;
+  background: rgba(255,255,255,.30);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 12px;
+  outline: none;
+  transition: border-color .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.field input,
+.field select {
+  min-height: 46px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 125px;
+  line-height: 1.6;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #879497;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(0, 79, 90, .55);
+  background: rgba(255,255,255,.58);
+  box-shadow: 0 0 0 3px rgba(53, 202, 202, .08);
+}
+
+.field select {
+  cursor: pointer;
+}
+
+.stage-question {
+  margin-top: 24px;
+}
+
+.stage-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px 25px;
+}
+
+.stage-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.stage-options input {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border: 1px solid rgba(0, 79, 90, .45);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.stage-options input:checked {
+  border-color: var(--teal);
+}
+
+.stage-options input:checked::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.contact-submit {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--teal-deep);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.contact-submit:hover {
+  background: var(--teal);
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(0, 63, 73, .16);
+}
+
+.contact-submit span {
+  display: inline-block;
+  margin-left: 9px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: transform .25s ease;
+}
+
+.contact-submit:hover span {
+  transform: translateX(4px);
+}
+
+.form-note {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-contact-box {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 17px 18px;
+  border-radius: 12px;
+  background: rgba(53, 202, 202, .10);
+}
+
+.whatsapp-contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: #1fc866;
+  font-size: 25px;
+}
+
+.whatsapp-contact-box h3 {
+  margin: 0;
+  color: var(--teal-deep);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.whatsapp-contact-box p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.whatsapp-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 15px;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.whatsapp-contact-link:hover {
+  background: var(--teal);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.whatsapp-contact-link span {
+  font-size: 14px;
+}
+
+
+/* ================= CTA ================= */
+
+.contact-cta {
+  padding: 100px 24px 110px;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(50px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.contact-cta h2 em {
+  font-style: italic;
+}
+
+.contact-cta > p:not(.eyebrow) {
+  margin-top: 23px;
+  color: rgba(247,245,238,.75);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-intro {
+    position: static;
+    padding-top: 0;
+  }
+
+  .contact-handwritten {
+    margin-top: 45px;
+    margin-left: 0;
+  }
+
+  .contact-form-card {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-hero {
+    padding: 65px 22px 70px;
+  }
+
+  .contact-intro h1 {
+    font-size: clamp(48px, 14vw, 65px);
+    letter-spacing: -1px;
+  }
+
+  .contact-lead {
+    font-size: 13px;
+  }
+
+  .contact-handwritten {
+    display: none;
+  }
+
+  .contact-form-card {
+    padding: 28px 20px 24px;
+    border-radius: 18px;
+  }
+
+  .form-topline {
+    margin-bottom: 30px;
+    font-size: 8px;
+  }
+
+  .form-section-heading {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .form-number {
+    width: 39px;
+    height: 39px;
+    flex-basis: 39px;
+    font-size: 11px;
+  }
+
+  .form-section-heading h2 {
+    font-size: 23px;
+  }
+
+  .field-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .stage-options {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .whatsapp-contact-box {
+    grid-template-columns: auto 1fr;
+  }
+
+  .whatsapp-contact-link {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .contact-cta {
+    padding: 80px 22px 90px;
+  }
+}
