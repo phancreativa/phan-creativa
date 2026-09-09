@@ -442,6 +442,8 @@ em {
   background: var(--cream);
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+color: inherit;
   transition: transform .25s ease, background .25s ease;
 }
 
@@ -474,6 +476,19 @@ em {
   margin-top: 13px;
   color: var(--muted);
   font-size: 13px;
+}
+
+.service-card-arrow {
+  margin-top: auto;
+  padding-top: 25px;
+  color: var(--teal);
+  font-size: 22px;
+  line-height: 1;
+  transition: transform .25s ease;
+}
+
+.service-card:hover .service-card-arrow {
+  transform: translateX(6px);
 }
 
 .work-preview {
