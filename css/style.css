@@ -1292,3 +1292,10 @@ em {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.service-partner-button p strong:last-child {
+  display: inline-block;
+  margin-top: 3px;
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
