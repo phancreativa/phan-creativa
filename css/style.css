@@ -464,8 +464,9 @@ color: inherit;
 }
 
 .service-icon i {
+  font-family: "Font Awesome 6 Free";
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .service-card h3,
