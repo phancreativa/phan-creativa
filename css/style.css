@@ -461,8 +461,11 @@ color: inherit;
   place-items: center;
   background: rgba(53,202,202,.15);
   color: var(--teal);
-  font-family: var(--serif);
-  font-size: 24px;
+}
+
+.service-icon i {
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .service-card h3,
