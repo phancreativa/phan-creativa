@@ -160,10 +160,14 @@
 
   display: grid;
   grid-template-columns: 1fr auto auto;
-  align-items: center;
+  align-items: start;
   gap: 50px;
 }
 
+.logo-express-price,
+.logo-express-toggle {
+  align-self: center;
+}
 
 /* ---------- TEXTO ---------- */
 
