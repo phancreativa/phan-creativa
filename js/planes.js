@@ -32,3 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+  const discoverButton = document.querySelector('[data-view="plans"]');
+
+  if (discoverButton) {
+    discoverButton.addEventListener("click", () => {
+      document.querySelector("#plans-details")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  }
+
+});
