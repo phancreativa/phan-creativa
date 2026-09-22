@@ -201,24 +201,36 @@
 /* ---------- PRECIO ---------- */
 
 .logo-express-price {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "price currency"
+    "intro intro";
   align-items: baseline;
-  gap: 6px;
+  column-gap: 6px;
+  row-gap: 4px;
   white-space: nowrap;
 }
 
 .logo-price {
+  grid-area: price;
   font-family: var(--serif);
   font-size: 30px;
   color: var(--teal-deep);
+  line-height: 1;
 }
 
 .logo-currency {
+  grid-area: currency;
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.04em;
 }
 
+.logo-express-price .intro-price {
+  grid-area: intro;
+  margin-top: 2px;
+}
 
 /* ---------- BOTÓN + ---------- */
 
