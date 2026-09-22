@@ -152,6 +152,7 @@
   color: var(--cream);
 }
 
+
 /* ---------- BLOQUE PRINCIPAL ---------- */
 
 .logo-express-main {
@@ -231,7 +232,10 @@
   grid-area: intro;
   margin-top: 2px;
 }
-
+.logo-price-symbol {
+  font-size: 0.72em;
+  vertical-align: 0.08em;
+}
 /* ---------- BOTÓN + ---------- */
 
 .logo-express-toggle {
