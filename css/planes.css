@@ -441,3 +441,92 @@
   }
 
 }
+/* =========================================================
+   SELECTOR DE VISTA DE PLANES
+   ========================================================= */
+
+.plans-view-switcher {
+  width: min(1040px, calc(100% - 60px));
+  margin: 0 auto;
+  padding: 34px 0 38px;
+}
+
+.plans-view-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line);
+}
+
+.plans-view-button {
+  position: relative;
+  min-height: 72px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 0;
+  background: transparent;
+  color: var(--teal);
+  font-family: var(--sans);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background .25s ease,
+    color .25s ease;
+}
+
+.plans-view-button + .plans-view-button {
+  border-left: 1px solid var(--line);
+}
+
+.plans-view-number {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--rose);
+}
+
+.plans-view-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.plans-view-button.is-active {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+.plans-view-button.is-active .plans-view-number {
+  color: var(--pink);
+}
+
+.plans-view-button:not(.is-active):hover {
+  background: rgba(0, 79, 90, 0.04);
+}
+
+
+/* Responsive */
+
+@media (max-width: 680px) {
+
+  .plans-view-switcher {
+    width: min(100% - 40px, 520px);
+    padding: 28px 0 32px;
+  }
+
+  .plans-view-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-view-button {
+    min-height: 64px;
+    padding: 14px 18px;
+  }
+
+  .plans-view-button + .plans-view-button {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+}
