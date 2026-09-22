@@ -534,7 +534,13 @@
 .plans-view-button:not(.is-active):hover {
   background: rgba(0, 79, 90, 0.04);
 }
-
+.plan-note {
+  max-width: 330px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
 
 /* Responsive */
 
