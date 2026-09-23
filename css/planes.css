@@ -570,3 +570,150 @@
 #plans-details {
   scroll-margin-top: 90px;
 }
+/* =========================================================
+   COMPARATIVA DE PLANES
+   ========================================================= */
+
+.plans-comparison {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 90px 30px 80px;
+}
+
+.plans-comparison-heading {
+  max-width: 620px;
+  margin-bottom: 45px;
+}
+
+.plans-comparison-heading h2 {
+  margin-top: 16px;
+  font-family: var(--serif);
+  font-size: clamp(44px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--teal-deep);
+}
+
+.plans-comparison-heading h2 em {
+  font-style: italic;
+}
+
+.plans-comparison-heading > p:not(.eyebrow) {
+  max-width: 520px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* ---------- TABLA ---------- */
+
+.comparison-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 17px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.comparison-table th {
+  background: var(--teal-deep);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.comparison-table th:first-child {
+  width: 25%;
+  text-align: left;
+}
+
+.comparison-table td {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.comparison-table td:first-child {
+  color: var(--teal-deep);
+  font-weight: 600;
+  text-align: left;
+}
+
+.comparison-table tbody tr:hover td {
+  background: rgba(53, 202, 202, .045);
+}
+
+
+/* ---------- SÍ / NO ---------- */
+
+.comparison-table td:not(:first-child) {
+  color: var(--muted);
+}
+
+.comparison-table td:not(:first-child):has(+ td) {
+  font-size: 11px;
+}
+
+
+/* ---------- NOTA ---------- */
+
+.comparison-note {
+  max-width: 620px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.55;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 680px) {
+
+  .plans-comparison {
+    padding: 65px 22px 60px;
+  }
+
+  .plans-comparison-heading {
+    margin-bottom: 32px;
+  }
+
+  .plans-comparison-heading h2 {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  .plans-comparison-heading > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+
+  .comparison-table {
+    min-width: 850px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 14px 12px;
+  }
+
+}
