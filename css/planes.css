@@ -575,6 +575,7 @@
    ========================================================= */
 
 .plans-comparison {
+  display: none;
   max-width: 1180px;
   margin: 0 auto;
   padding: 90px 30px 80px;
