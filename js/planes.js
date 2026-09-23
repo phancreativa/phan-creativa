@@ -32,17 +32,52 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
-  const discoverButton = document.querySelector('[data-view="plans"]');
+  const viewButtons = document.querySelectorAll(".plans-view-button");
+  const plansDetails = document.querySelector("#plans-details");
+  const comparison = document.querySelector("#plans-comparison");
 
-  if (discoverButton) {
-    discoverButton.addEventListener("click", () => {
-      document.querySelector("#plans-details")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+  if (!viewButtons.length || !plansDetails || !comparison) return;
+
+  viewButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const selectedView = button.dataset.view;
+
+      viewButtons.forEach(btn => {
+        btn.classList.remove("is-active");
       });
+
+      button.classList.add("is-active");
+
+      if (selectedView === "comparison") {
+
+        plansDetails.style.display = "none";
+        comparison.style.display = "block";
+
+        comparison.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+      } else {
+
+        comparison.style.display = "none";
+        plansDetails.style.display = "block";
+
+        plansDetails.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+      }
+
     });
-  }
+
+  });
 
 });
