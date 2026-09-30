@@ -46,3 +46,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactButton = document.querySelector(".contact-scroll-trigger");
+  const contactForm = document.querySelector("#contact-form");
+
+  if (!contactButton || !contactForm) return;
+
+  contactButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    contactForm.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+});
