@@ -472,3 +472,6 @@
     padding: 80px 22px 90px;
   }
 }
+#contact-form {
+  scroll-margin-top: 90px;
+}
