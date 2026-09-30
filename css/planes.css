@@ -1,6 +1,11 @@
 /* ================= PLANES — PHAN CREATIVA ================= */
 
-.plans-intro{padding:clamp(85px,10vw,125px) max(30px,7vw) 70px;background:var(--warm-white)}
+.plans-intro {
+  min-height: 520px;
+  box-sizing: border-box;
+  padding: clamp(85px, 10vw, 125px) max(30px, 7vw) 70px;
+  background: var(--warm-white);
+}
 .plans-intro-inner{max-width:1040px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:end;gap:80px}
 .plans-intro h1{margin-top:18px;max-width:720px;font-family:var(--serif);font-size:clamp(52px,7vw,82px);font-weight:400;line-height:.98;letter-spacing:-2px;color:var(--ink)}
 .plans-intro h1 em{font-style:italic}.plans-lead{margin-top:28px;color:var(--muted);font-size:14px;line-height:1.7}
@@ -32,7 +37,10 @@
 .plan-detail{grid-template-columns:82px 1fr 1fr}.plan-action{grid-column:2/-1;border-left:0;border-top:1px solid var(--line);padding:25px 0 0;margin-top:4px}.plan-includes{padding-left:22px}
 }
 @media(max-width:680px){
-.plans-intro{padding:70px 22px 45px}.plans-intro-inner{gap:30px}.plans-intro h1{font-size:clamp(46px,14vw,64px);letter-spacing:-1.2px}.plans-lead{font-size:13px}.plans-note{display:none}
+.plans-intro {
+  min-height: auto;
+  padding: 70px 22px 45px;
+}.plans-intro-inner{gap:30px}.plans-intro h1{font-size:clamp(46px,14vw,64px);letter-spacing:-1.2px}.plans-lead{font-size:13px}.plans-note{display:none}
 .plans-list{padding:0 22px 10px}.plan-detail{grid-template-columns:55px 1fr;gap:14px;padding:38px 0}.plan-marker{gap:17px}.plan-symbol{width:50px;height:50px;font-size:38px}.leaf-symbol{font-size:35px}.flower-symbol{font-size:32px}.plan-name{padding-top:19px}.plan-name h2{font-size:39px}.plan-price{font-size:17px}
 .plan-includes{grid-column:2;padding:25px 0 0;border-left:0;border-top:1px solid var(--line)}.plan-action{grid-column:2;padding-top:23px;margin-top:0}.plan-tagline{font-size:16px}.plan-button{min-width:0;width:100%;max-width:290px}
 .plans-consultation{margin:38px 22px 55px;padding:32px 25px;grid-template-columns:1fr;gap:28px}.consultation-note{padding:25px 0 0;border-left:0;border-top:1px solid rgba(0,79,90,.2)}
