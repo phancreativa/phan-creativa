@@ -787,13 +787,13 @@
   flex: 0 0 calc((100% - 40px) / 3);
   box-sizing: border-box;
   padding: 30px 28px 28px;
-  background: #155c64;
+  background: #2b6870;
   border: 1px solid rgba(31, 41, 43, .10);
   border-radius: 22px;
 
   display: flex;
   flex-direction: column;
-
+min-height: 780px;
   transition:
     transform .3s ease,
     border-color .3s ease,
