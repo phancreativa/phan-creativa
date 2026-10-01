@@ -737,7 +737,7 @@
 .plans-carousel-section {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 90px 30px 100px;
+  padding: 115px 30px 100px;
 }
 
 .plans-carousel-heading {
@@ -983,7 +983,7 @@ color: var(--teal-deep);
 
 .plans-carousel-arrow {
   position: absolute;
-  top: -78px;
+  top: -58px;
 
   display: flex;
   align-items: center;
