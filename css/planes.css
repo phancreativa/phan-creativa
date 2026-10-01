@@ -787,7 +787,7 @@
   flex: 0 0 calc((100% - 40px) / 3);
   box-sizing: border-box;
   padding: 30px 28px 28px;
-  background: var(--teal-deep);
+  background: #155c64;
   border: 1px solid rgba(31, 41, 43, .10);
   border-radius: 22px;
 
@@ -923,7 +923,7 @@
   justify-content: space-between;
   gap: 15px;
 
-  margin-top: 25px;
+  margin-top:auto;
   padding: 13px 17px;
 
   border-radius: 999px;
@@ -961,7 +961,7 @@ color: var(--teal-deep);
 
   margin-top: 14px;
 
-  color: var(--teal);
+  color: var(--mint);
   font-size: 10px;
   font-weight: 600;
   text-decoration: none;
@@ -1100,7 +1100,11 @@ color: var(--teal-deep);
     padding: 27px 24px 25px;
     border-radius: 19px;
   }
-
+.plan-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
   .plan-card-content h3 {
     font-size: 38px;
   }
