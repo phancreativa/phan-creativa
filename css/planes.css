@@ -774,13 +774,17 @@
   position: relative;
 }
 
+.plans-carousel-window {
+  width: 100%;
+  overflow: hidden;
+}
+
 .plans-carousel-track {
   display: flex;
   gap: 20px;
   transition: transform 0.45s ease;
   will-change: transform;
 }
-
 
 /* ================= TARJETAS ================= */
 
@@ -1116,9 +1120,8 @@
   }
 
   .plans-carousel-track {
-    gap: 14px;
-    overflow: hidden;
-  }
+  gap: 14px;
+}
 
   .plan-card {
     flex: 0 0 100%;
