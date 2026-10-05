@@ -781,19 +781,23 @@
 }
 
 
-/* ================= TARJETA ================= */
+/* ================= TARJETAS ================= */
 
 .plan-card {
   flex: 0 0 calc((100% - 40px) / 3);
   box-sizing: border-box;
   padding: 30px 28px 28px;
-  background: #2b6870;
-  border: 1px solid rgba(31, 41, 43, .10);
+
+  /* Azul tenue */
+  background: #DAEEE9;
+
+  border: 1px solid rgba(0, 79, 90, .10);
   border-radius: 22px;
 
   display: flex;
   flex-direction: column;
-min-height: 780px;
+  min-height: 780px;
+
   transition:
     transform .3s ease,
     border-color .3s ease,
@@ -827,6 +831,7 @@ min-height: 780px;
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: var(--rose);
   font-family: Georgia, serif;
   font-size: 39px;
@@ -836,29 +841,39 @@ min-height: 780px;
 
 /* ================= CONTENIDO ================= */
 
+.plan-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .plan-card-content h3 {
   margin-top: 25px;
+
   font-family: var(--serif);
   font-size: 39px;
   font-weight: 400;
   line-height: 1;
-  color: var(--cream);
+
+  color: var(--teal-deep);
 }
 
 .plan-card-price {
   margin-top: 16px;
-  color: var(--cream);
+
+  color: var(--teal-deep);
   font-size: 19px;
   font-weight: 500;
 }
 
 .plan-card-price span {
   font-size: 21px;
-  color: var(--cream);
+  color: var(--teal-deep);
 }
 
 .plan-card-intro-price {
   margin-top: 7px;
+
   color: var(--rose);
   font-size: 9px;
   font-weight: 700;
@@ -869,7 +884,8 @@ min-height: 780px;
 .plan-card-tagline {
   min-height: 44px;
   margin-top: 25px;
-  color: var(--cream);
+
+  color: var(--teal-deep);
   font-family: var(--serif);
   font-size: 16px;
   line-height: 1.35;
@@ -879,12 +895,14 @@ min-height: 780px;
   width: 100%;
   height: 1px;
   margin: 25px 0 22px;
-  background: rgba(247,245,238,.18);
+
+  background: rgba(0, 79, 90, .15);
 }
 
 .plan-card-label {
   margin-bottom: 13px;
-  color: var(--mint);
+
+  color: var(--teal);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: .25em;
@@ -900,7 +918,8 @@ min-height: 780px;
   position: relative;
   padding-left: 17px;
   margin-bottom: 8px;
-  color: rgba(247,245,238,.78);
+
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.45;
 }
@@ -910,6 +929,7 @@ min-height: 780px;
   position: absolute;
   left: 0;
   top: -1px;
+
   color: var(--teal);
   font-weight: 600;
 }
@@ -923,12 +943,15 @@ min-height: 780px;
   justify-content: space-between;
   gap: 15px;
 
-  margin-top:auto;
+  /* Esto mantiene los botones alineados */
+  margin-top: auto;
+
   padding: 13px 17px;
 
   border-radius: 999px;
-  background: var(--cream);
-color: var(--teal-deep);
+
+  background: var(--teal-deep);
+  color: var(--cream);
 
   text-decoration: none;
   font-size: 9px;
@@ -943,8 +966,8 @@ color: var(--teal-deep);
 }
 
 .plan-card-button:hover {
-  background: var(--mint);
-  color: var(--teal-deep);
+  background: var(--teal);
+  color: var(--cream);
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0, 63, 73, .14);
 }
@@ -961,12 +984,14 @@ color: var(--teal-deep);
 
   margin-top: 14px;
 
-  color: var(--mint);
+  color: var(--teal);
   font-size: 10px;
   font-weight: 600;
   text-decoration: none;
 
-  transition: opacity .25s ease, transform .25s ease;
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
 }
 
 .plan-card-whatsapp i {
