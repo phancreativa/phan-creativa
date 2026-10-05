@@ -15,14 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
       item => item.value.toLowerCase() === selectedPlan.toLowerCase()
     );
 
-    if (option) {
-      planSelect.value = option.value;
-      if (serviceSelect) {
-        serviceSelect.value = "Plan de identidad";
-      }
-    }
+if (option) {
+  planSelect.value = option.value;
+
+  if (serviceSelect) {
+    serviceSelect.value = "Plan de identidad";
   }
 
+  setTimeout(() => {
+    const contactCard = document.querySelector(".contact-form-card");
+
+    if (contactCard) {
+      contactCard.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }, 150);
+}
   /*
     Por ahora el formulario es visual/interactivo.
     GitHub Pages no procesa formularios por sí solo.
@@ -62,38 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-/* =========================================================
-   SELECCIÓN AUTOMÁTICA DE PLAN
-========================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  const params = new URLSearchParams(window.location.search);
-  const selectedPlan = params.get("plan");
-
-  const servicioSelect = document.querySelector("#servicio");
-  const planSelect = document.querySelector("#plan");
-  const contactForm = document.querySelector("#contactForm");
-
-  if (!selectedPlan || !servicioSelect || !planSelect) return;
-
-  // Seleccionar automáticamente "Plan de identidad"
-  servicioSelect.value = "Plan de identidad";
-
-  // Seleccionar el plan elegido
-  planSelect.value = selectedPlan;
-
-  // Si el navegador no encuentra el plan, no hacemos nada más
-  if (planSelect.value !== selectedPlan) return;
-
-  // Llevar suavemente al formulario
-  if (contactForm) {
-    setTimeout(() => {
-      contactForm.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }, 150);
-  }
-
-});
