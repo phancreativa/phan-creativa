@@ -777,7 +777,8 @@
 .plans-carousel-track {
   display: flex;
   gap: 20px;
-  overflow: hidden;
+  transition: transform 0.45s ease;
+  will-change: transform;
 }
 
 
