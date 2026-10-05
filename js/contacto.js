@@ -62,3 +62,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+/* =========================================================
+   SELECCIÓN AUTOMÁTICA DE PLAN
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const params = new URLSearchParams(window.location.search);
+  const selectedPlan = params.get("plan");
+
+  const servicioSelect = document.querySelector("#servicio");
+  const planSelect = document.querySelector("#plan");
+  const contactForm = document.querySelector("#contactForm");
+
+  if (!selectedPlan || !servicioSelect || !planSelect) return;
+
+  // Seleccionar automáticamente "Plan de identidad"
+  servicioSelect.value = "Plan de identidad";
+
+  // Seleccionar el plan elegido
+  planSelect.value = selectedPlan;
+
+  // Si el navegador no encuentra el plan, no hacemos nada más
+  if (planSelect.value !== selectedPlan) return;
+
+  // Llevar suavemente al formulario
+  if (contactForm) {
+    setTimeout(() => {
+      contactForm.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 150);
+  }
+
+});
