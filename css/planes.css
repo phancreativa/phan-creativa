@@ -805,9 +805,9 @@
 }
 
 .plan-card:hover {
-  transform: translateY(-2px);
+  transform: none;
   border-color: rgba(0, 79, 90, .18);
-  box-shadow: 0 10px 25px rgba(0, 63, 73, .10);
+  box-shadow: 0 12px 28px rgba(0, 63, 73, .12);
 }
 
 /* ================= PARTE SUPERIOR ================= */
