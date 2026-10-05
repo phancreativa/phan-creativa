@@ -81,3 +81,76 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+/* =========================================================
+   CARRUSEL DE PLANES
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const track = document.querySelector(".plans-carousel-track");
+  const cards = document.querySelectorAll(".plans-carousel-track .plan-card");
+  const prevButton = document.querySelector(".plans-carousel-prev");
+  const nextButton = document.querySelector(".plans-carousel-next");
+
+  if (!track || !cards.length || !prevButton || !nextButton) return;
+
+  let currentIndex = 0;
+
+  function getVisibleCards() {
+    if (window.innerWidth <= 680) {
+      return 1;
+    }
+
+    if (window.innerWidth <= 950) {
+      return 2;
+    }
+
+    return 3;
+  }
+
+  function updateCarousel() {
+
+    const visibleCards = getVisibleCards();
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    const cardWidth = cards[0].getBoundingClientRect().width;
+
+    const maxIndex = Math.max(0, cards.length - visibleCards);
+
+    if (currentIndex > maxIndex) {
+      currentIndex = maxIndex;
+    }
+
+    const movement = currentIndex * (cardWidth + gap);
+
+    track.style.transform = `translateX(-${movement}px)`;
+
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex === maxIndex;
+  }
+
+  nextButton.addEventListener("click", () => {
+
+    const visibleCards = getVisibleCards();
+    const maxIndex = Math.max(0, cards.length - visibleCards);
+
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateCarousel();
+    }
+
+  });
+
+  prevButton.addEventListener("click", () => {
+
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+
+  });
+
+  window.addEventListener("resize", updateCarousel);
+
+  updateCarousel();
+
+});
