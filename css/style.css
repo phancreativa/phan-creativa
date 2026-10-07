@@ -505,10 +505,10 @@ color: inherit;
 
 .work-image-frame img {
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 390px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .work-preview {
