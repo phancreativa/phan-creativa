@@ -504,10 +504,11 @@ color: inherit;
 }
 
 .work-image-frame img {
-  width: 100%;
+  width: 92%;
   height: auto;
   display: block;
   object-fit: contain;
+  margin: 0 auto;
 }
 
 .work-preview {
